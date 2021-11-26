@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-center {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 2px 4px 2px rgb(158, 158, 158);
+}
+.sticky {
+    position:sticky;
+    top: 0;
+}
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 50px 30px 50px;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.logologo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid green;
+    background-color: black;
+    margin-right: 10px;
+}
+.logologo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid green;
+    opacity: 0.2;
+    background-color: black;
+}
+.logo h2 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.3rem;
+    color: rgb(2, 2, 58);
+}
+.nav-header button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border: 3px solid rgb(2, 2, 58);
+}
+.nav-header button div {
+    width:99%;
+    height: 3%;
+    background-color: black;
+    margin: auto;
+}
+.links {
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+    height: 300px;
+}
+.links li {
+    margin: 10px;
+    list-style-type: none;
+}
+.links li a {
+    text-decoration: none;
+}
+.linksChildren {
+    width: 70vw;
+    height: 7vh;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+    color: rgb(78, 78, 78);
+    transition: all 0.3s linear;
+    border: 3px solid black;
+}
+.reduceWidth {
+    width: 80%;
+}
+.linksChildren:hover {
+    padding-left: 30px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+.noLinks {
+    height: 0;
+    overflow: hidden;
+}
+.x1 {
+    position: absolute;
+    transform: rotate(45deg);
+}
+.x2 {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+
+
+.other {
+    width: 100vw;
+    height: 1500px;
+    background-color: black;
+}
+.other1 {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(158, 61, 61);
+}
+.other2 {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(0, 156, 112);
+}
+.other3 {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(250, 227, 19);
+}
+.other4 {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(0, 134, 13);
+}
+.thefooter {
+    width: 100vw;
+    height: 300px;
+    background-color: rgb(45, 18, 94);
+}
+
+@media screen and (min-width: 800px) {
+        
+        #nav-toggle-button {
+            display: none;
+        }
+        .nav-center {
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-header {
+            width: 30vw;
+        }
+        .links {
+            height: 10vh;
+            width: 70vw;
+            display: flex;
+            flex-direction: row;
+        }
+        .links li {
+            margin: 40px 0 0 0;
+            list-style-type: none;
+        }
+        .links li a {
+            text-decoration: none;
+        }
+        .linksChildren {
+            width: 125px;
+            height: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: lighter;
+            letter-spacing: 0.3rem;
+            color: rgb(78, 78, 78);
+            transition: all 0.3s linear;
+            border: 3px solid black;
+            cursor: pointer;
+        }
+        .linksChildren:hover {
+            padding-left: 10px;
+        }
+}
